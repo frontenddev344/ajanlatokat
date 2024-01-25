@@ -1,0 +1,719 @@
+/*global start*/
+@import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap");
+li {
+  list-style: none;
+}
+
+a,
+button {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0C0B0B;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+@media screen and (max-width: 575px) {
+  p {
+    text-align: justify;
+  }
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: normal;
+  color: #fff;
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 43px;
+  }
+}
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 34px;
+  }
+}
+
+h2 {
+  font-size: 35px;
+  line-height: normal;
+  font-weight: 700;
+  color: #aa8453;
+  font-family: "Italiana";
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 700;
+  color: #aa8453;
+  font-family: "Italiana";
+}
+
+h4 {
+  font-size: 25px;
+  color: #aa8453;
+  font-weight: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-size: 1.6rem;
+  font-family: "Italiana", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus {
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/*global end*/
+/*header start*/
+header.site-header {
+  background: transparent;
+  font-size: 18px;
+  padding: 14px 0;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  transition: 0.3s;
+}
+
+header.site-header.sticky {
+  background: #1b212f;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.3);
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  padding: 10px 0;
+  position: fixed;
+}
+
+.site-header .site-nav ul li a.active {
+  color: #aa8453;
+}
+
+.site-logo img {
+  width: 100%;
+  max-width: 110px;
+}
+
+.site-nav a {
+  padding: 8px 12px !important;
+  display: inline-block;
+  font-family: "Italiana", sans-serif;
+  color: #fff;
+}
+.site-nav a:hover {
+  color: #aa8453;
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+.site-header {
+  padding: 10px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.closed-menu {
+  display: none;
+}
+
+.menu-toggle {
+  display: none !important;
+}
+
+/*header end*/
+/*--footer--*/
+.footer {
+  background-color: #1b212f;
+}
+
+.footer_box {
+  position: relative;
+}
+.footer_box img {
+  width: 200px;
+}
+.footer_box h3 {
+  font-size: 18px;
+  color: #aa8453;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Italiana";
+}
+
+.mail {
+  z-index: 2;
+  position: relative;
+}
+.mail h3 {
+  font-size: 18px;
+  color: #aa8453;
+  position: relative;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Italiana";
+}
+.mail h4 {
+  font-size: 18px;
+  color: #aa8453;
+  font-family: "Italiana";
+}
+.mail a {
+  color: #fff;
+  font-size: 18px;
+}
+.mail li {
+  color: white;
+  font-family: "IBM Plex Sans";
+}
+
+.footer_box ul li a {
+  color: #fff;
+  font-size: 18px;
+  z-index: 2;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+.footer_box ul li a:hover {
+  padding-left: 10px;
+}
+
+.footer_icon ul li a {
+  padding: 0px 19px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.footer_icon ul {
+  display: flex;
+}
+
+.footer_icon li a:first-child {
+  padding-left: 0;
+  margin-left: 0px;
+}
+
+.footer_boxes .footer_icon ul li a:hover {
+  padding-left: 0;
+}
+
+.footer_boxes ul li a {
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  width: 40px;
+  height: 40px;
+  background: #aa8453;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0px 11px;
+}
+.footer_boxes ul li a:hover {
+  background-color: #fff;
+  color: #aa8453;
+}
+
+.footer .row {
+  padding: 50px 0;
+}
+
+/*footer-css-end*/
+/*cookie start*/
+.cookie-alert {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 !important;
+  z-index: 999;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  left: 0;
+}
+
+.cookie-alert.show {
+  opacity: 1;
+  transform: translateY(0%);
+  transition-delay: 1000ms;
+}
+
+a.btn.btn-primary.accept-cookies {
+  background: #1b212f;
+  padding: 6px 22px;
+  font-size: 20px;
+  border: 1px solid #1b212f;
+}
+a.btn.btn-primary.accept-cookies:hover {
+  background-color: #aa8453;
+  color: #fff;
+  border: 1px solid #aa8453;
+}
+
+/*cookie end*/
+/*privacy-policy start*/
+.privacy__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/privacybanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.privacy__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+.privacy-policy {
+  padding: 40px 0;
+}
+.privacy-policy .content-wrap li {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: normal;
+  color: #0C0B0B;
+  font-family: "IBM Plex Sans";
+  padding-bottom: 8px;
+}
+
+.terms {
+  padding: 40px 0;
+}
+.terms .content-wrap li {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #0C0B0B;
+  font-family: "IBM Plex Sans";
+  padding-bottom: 8px;
+}
+
+.content-wrap h4 {
+  color: #aa8453;
+  font-size: 21px;
+  margin-bottom: 0;
+}
+.content-wrap p {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+/*privacy-policy end*/
+/*terms-conditon start*/
+.terms__section {
+  position: relative;
+  height: 350px;
+  background-image: url(../images/termsbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin-top: 0;
+  isolation: isolate;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.terms__section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: -1;
+}
+
+/*terms-conditon-end/
+
+
+/*home-css-start*/
+section.homebanner {
+  position: relative;
+  height: 500px;
+  background-image: url(../images/homebanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+section.homebanner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  isolation: isolate;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.homebanner-heading h1 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+}
+
+.hometext-content {
+  padding: 50px 0 0 0;
+}
+
+.row.casino {
+  border: 1px solid;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.hotelcard {
+  padding: 50px 0 0 0;
+}
+.hotelcard p {
+  color: #0C0B0B;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 15px 0;
+}
+.hotelcard__picture img {
+  max-width: 450px;
+  height: 450px;
+  object-fit: cover;
+}
+.hotelcard__part {
+  max-width: 450px;
+  padding: 30px 0;
+  margin-left: 55px;
+}
+.hotelcard__part h3 {
+  border-bottom: 1px solid #1b212f;
+}
+.hotelcard__part h4 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.hotelcard__main {
+  display: flex;
+  gap: 20px;
+}
+
+.hotel-btn.casino {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.hotel-btn a {
+  display: inline-block;
+  background: #1b212f;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+  padding: 13px 30px;
+  border: 1px solid #1b212f;
+}
+.hotel-btn a:hover {
+  border: 1px solid #aa8453;
+  background-color: #aa8453;
+  color: #fff;
+}
+
+.homemain__part.casino {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+}
+
+.homemain__picture.casino img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.hometext.bottom {
+  padding: 50px 0;
+}
+
+/*home-css-end*/
+/*aboutbanner-css-start*/
+.aboutbanner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/aboutbanner.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.aboutbanner::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.62);
+  height: 450px;
+}
+
+.bottomtext span {
+  color: #0C0B0B;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.about_us_content {
+  padding: 30px 0;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.input-control {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  border: 1px solid #aa8453;
+  padding: 2rem 2rem;
+  background: transparent;
+  color: #0C0B0B;
+}
+
+.input-control:focus-visible {
+  outline: none;
+}
+
+textarea.input-control {
+  resize: none;
+  height: auto;
+}
+
+.form-group .submit-btn {
+  background: #aa8453;
+  border: 1px solid #aa8453;
+  transition: all 0.2s linear;
+  display: inline-block;
+  padding: 0.8rem 4rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+.form-group .submit-btn:hover {
+  background-color: #1b212f;
+  color: #fff;
+}
+
+.form-group label {
+  display: inline-block;
+  padding-bottom: 5px;
+  color: #0C0B0B;
+  transition: all 0.2s linear;
+  text-transform: capitalize;
+  font-family: "IBM Plex Sans";
+}
+
+section.abouttext {
+  padding: 50px 0;
+}
+
+.bottomtext h3 {
+  font-weight: 400;
+}
+
+.abouttext .hometext-text h3 {
+  font-weight: 400;
+}
+
+/*aboutbanner-css-end*/
+/*luxurybanner-css-start*/
+.luxurybanner {
+  position: relative;
+  height: 450px;
+  background-image: url(../images/luxurybanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+.luxurybanner::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.62);
+  height: 450px;
+}
+
+.luxury-main {
+  position: relative;
+  background-image: url(../images/hotelcardbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  object-fit: cover;
+  padding: 50px 0;
+}
+.luxury-main::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.62);
+}
+
+.luxurycard {
+  background: #fff;
+  position: relative;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  height: 100%;
+  z-index: 2;
+}
+
+.luxuryhead {
+  z-index: 2;
+}
+
+.row.space {
+  row-gap: 20px;
+}
+
+.luxuryflex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: start;
+  margin: 20px 0;
+}
+
+.luxury-inner img {
+  height: 245px;
+  object-fit: cover;
+}
+
+.luxuryflex h4 {
+  font-size: 20px;
+  line-height: normal;
+}
+
+/*luxurybanner-css-end*/
+/*resortsbanner-css-start*/
+section.resorts-main {
+  background-color: #1b212f;
+  padding: 50px 0;
+}
+
+.Resortsbnner {
+  position: relative;
+  background-image: url(../images/resortsbanner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  object-fit: cover;
+  padding: 50px 0;
+  height: 450px;
+}
+.Resortsbnner::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.entertainmentcard p {
+  color: #fff;
+}
+
+.hotel-btn.primary a {
+  background: #aa8453;
+  border: 1px solid #aa8453;
+}
+.hotel-btn.primary a:hover {
+  background-color: transparent;
+  color: #aa8453;
+}
+
+.entertainmentcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.entertainmentcard-picture img {
+  height: 300px;
+  object-fit: cover;
+}
+
+/*resortsbanner-css-end*/
+
+
+/*# sourceMappingURL=style.css.map */
