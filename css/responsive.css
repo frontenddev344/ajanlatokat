@@ -210,6 +210,9 @@ h4 {
   .homemain__part.casino {
     margin-top: 10px;
   }
+  .offercard-picture img {
+    height: 550px;
+  }
 }
 @media screen and (max-width: 768px) {
   .entertainmentcard-picture img {
@@ -218,6 +221,14 @@ h4 {
   }
   .entertainmentcard {
     padding: 20px 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .offercard-picture img {
+    max-width: 100%;
+    height: 350px;
+    object-position: 30% 62%;
+    padding-bottom: 25px;
   }
 }
 @media screen and (max-width: 575px) {
