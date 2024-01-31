@@ -710,5 +710,51 @@ section.resorts-main {
 
 /*resortsbanner-css-end*/
 
+/*offer-css-start*/
+.offersbanner {
+    position: relative;
+    background-image: url(../images/offerbanner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    object-fit: cover;
+    padding: 50px 0;
+    height: 450px;
+
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background-color: rgb(0 0 0 / 50%);
+    }
+}
+
+.offers {
+    &content {
+        h5 {
+            font-size: 16px;
+            font-family: 'IBM Plex Sans';
+            font-weight: 600;
+        }
+
+        p span {
+            color: $clr-yellow;
+            font-weight: 600;
+        }
+    }
+}
+
+.offercard-picture img {
+    max-width: 575px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.row.spaces {
+    margin: 50px 0;
+}
+
+/*offer-css-start*/
 
 /*# sourceMappingURL=style.css.map */
