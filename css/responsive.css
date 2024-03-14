@@ -251,6 +251,14 @@ h4 {
     display: none;
   }
 }
+@media screen and (max-width: 480px) {
+  p.rating-text {
+    font-size: 14px;
+  }
+  .notpad p {
+    font-size: 14px;
+  }
+}
 @media screen and (max-width: 395px) {
   .warapper {
     padding: 10px;
