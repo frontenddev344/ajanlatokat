@@ -226,6 +226,30 @@
     .footer_box h3 {
         font-size: 20px;
     }
+
+    section.mobile-view {
+        display: block;
+    }
+
+    section.desktop-version {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:395px) {
+    .warapper {
+        padding: 10px;
+    }
+    p.rating-text {
+        font-size: 12px;
+    }
+    .notpad p {
+        font-size: 12px;
+    }
+    p.rated-star {
+        font-size: 11px;
+    }
 }
 
 /*# sourceMappingURL=responsive.css.map */
